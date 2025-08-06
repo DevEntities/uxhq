@@ -37,7 +37,7 @@ const footer = () => {
 
 
   return (
-    <div className='bg-UXHQ-black rounded-t-[6.5rem] maxsm:absolute'>
+    <div className=''>
 
 
 
