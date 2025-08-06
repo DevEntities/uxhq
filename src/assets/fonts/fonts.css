@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('./font.woff') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MyCustomFont2';
+  src: url('./DMSans-Regular.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MyCustomFont3';
+  src: url('./DMSans-Medium.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+  font-size: 70%;
+  /* Base: ~12.08px */
+  background-color: black;
+}
+
+/* Medium desktops (1366px and above) */
+@media (min-width: 520px) {
+  html {
+    font-size: 70%;
+    /* ~14.4px */
+    /* background: gray; */
+  }
+}
+
+@media (min-width: 1280px) {
+  html {
+    font-size: 65%;
+    /* ~14.4px */
+    /* background: gray; */
+  }
+}
+
+/* Standard full HD desktops (1600px and above) */
+@media (min-width: 1537px) {
+  html {
+    font-size: 95%;
+    /* ~16.8px */
+    /* background: rgba(112, 60, 60, 0.555); */
+
+  }
+}
+
+
+/* Between 1920px and 2559px (common 1080p and small 2K screens) */
+@media (min-width: 1990px) {
+  html {
+    font-size: 100%;
+    /* = 16px */
+    /* background: #ffdf5f63; */
+  }
+}
+
+/* 2560px and above (ultra-wide or large 2K/4K) */
+@media (min-width: 2560px) {
+  html {
+    font-size: 130%;
+    /* = 20.8px */
+    /* background: #ff5f5f63; */
+  }
+}
+
+
+@media (min-width: 3840px) {
+  html {
+    font-size: 190%;
+    /* background: #625fff63; */
+  }
+}
+
+/* Hide scrollbar but keep scrolling */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* Hide scrollbar for all browsers */
+body,
+html {
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+}
+
+body::-webkit-scrollbar,
+html::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Opera */
+}
+
+/* Custom slow spin animation for better UX */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 2s linear infinite;
+}
