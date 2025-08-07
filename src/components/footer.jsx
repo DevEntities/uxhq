@@ -230,7 +230,7 @@ const footer = () => {
                     <a
                       key={label}
                       href={href}
-                      target='_blank' 
+                      target='_blank'
                       aria-label={label}
                       className="group relative w-8 h-8"
                     >
@@ -289,23 +289,45 @@ const footer = () => {
 
 
       {shouldHideExtras && location.pathname === "/conversation" && (
-        <footer className='w-full flex justify-between items-center font-dmsans px-9 py-4 relative'>
+
+        <footer className='w-full text-base max-[1533px]:text-[1.5rem] max-[500px]:text-[1rem] max-[400px]:text-[1.1rem] text-center bg-red400/50   flex justify-between items-center font-dmsans px-9  h-[6vh] max-[1533px]:h-[9vh] max-md:h-[7vh]  sticky bottom-0  '>
 
 
 
           <div>
 
-            <span className="text-UXHQ-black/70 font-dmsans font-normal text-base leading-[120%] tracking-[0%]">© 2025 UXHQ. All rights reserved.</span>
+            <span className="text-UXHQ-black/70 ">© 2025 UXHQ. All rights reserved.</span>
           </div>
 
-          <div className="flex items-center text-UXHQ-black/70">
-            <NavLink className='hover:underline-offset-1 hover:underline font-dmsans font-normal text-base leading-[120%] tracking-[0%]' to={'/terms_of_use'}>Terms of use</NavLink>
+          <div className="flex space-x-1 text-UXHQ-black/70">
+            {/* <NavLink className='hover:underline-offset-1 hover:underline' to={'/policy'}>Privacy policy</NavLink> */}
+            {/* <span className='font-bold'> • </span> */}
+            <NavLink className='hover:underline-offset-1 hover:underline' to={'/terms_of_use'}>Terms of use</NavLink>
           </div>
 
 
 
 
         </footer>
+
+
+        // <footer className='w-full flex justify-between items-center font-dmsans px-9 py-4 relative'>
+
+
+
+        //   <div>
+
+        //     <span className="text-UXHQ-black/70 font-dmsans font-normal text-base leading-[120%] tracking-[0%]">© 2025 UXHQ. All rights reserved.</span>
+        //   </div>
+
+        //   <div className="flex items-center text-UXHQ-black/70">
+        //     <NavLink className='hover:underline-offset-1 hover:underline font-dmsans font-normal text-base leading-[120%] tracking-[0%]' to={'/terms_of_use'}>Terms of use</NavLink>
+        //   </div>
+
+
+
+
+        // </footer>
 
 
 
